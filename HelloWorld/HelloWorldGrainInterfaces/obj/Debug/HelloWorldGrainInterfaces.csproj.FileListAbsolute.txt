@@ -1,0 +1,5 @@
+c:\sd\orleans-demo\HelloWorld\HelloWorldGrainInterfaces\bin\Debug\HelloWorldGrainInterfaces.dll
+c:\sd\orleans-demo\HelloWorld\HelloWorldGrainInterfaces\bin\Debug\HelloWorldGrainInterfaces.pdb
+c:\sd\orleans-demo\HelloWorld\HelloWorldGrainInterfaces\obj\Debug\HelloWorldGrainInterfaces.csprojResolveAssemblyReference.cache
+c:\sd\orleans-demo\HelloWorld\HelloWorldGrainInterfaces\obj\Debug\HelloWorldGrainInterfaces.dll
+c:\sd\orleans-demo\HelloWorld\HelloWorldGrainInterfaces\obj\Debug\HelloWorldGrainInterfaces.pdb

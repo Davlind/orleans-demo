@@ -1,0 +1,8 @@
+C:\Microsoft Project Orleans SDK v1.0\SDK\LocalSilo\HelloWorldSilo.exe.config
+C:\Microsoft Project Orleans SDK v1.0\SDK\LocalSilo\DevTestClientConfiguration.xml
+C:\Microsoft Project Orleans SDK v1.0\SDK\LocalSilo\DevTestServerConfiguration.xml
+C:\Microsoft Project Orleans SDK v1.0\SDK\LocalSilo\HelloWorldSilo.exe
+C:\Microsoft Project Orleans SDK v1.0\SDK\LocalSilo\HelloWorldSilo.pdb
+c:\sd\orleans-demo\HelloWorld\HelloWorldSilo\obj\Debug\HelloWorldSilo.csprojResolveAssemblyReference.cache
+c:\sd\orleans-demo\HelloWorld\HelloWorldSilo\obj\Debug\HelloWorldSilo.exe
+c:\sd\orleans-demo\HelloWorld\HelloWorldSilo\obj\Debug\HelloWorldSilo.pdb
