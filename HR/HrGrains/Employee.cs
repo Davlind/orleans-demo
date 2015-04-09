@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using HrGrainInterfaces;
 using Orleans;
 
@@ -25,6 +26,12 @@ namespace HrGrains
         public Task SetManager(IManager manager)
         {
             _manager = manager;
+            return TaskDone.Done;
+        }
+
+        public Task Greeting(IEmployee from, string message)
+        {
+            Console.WriteLine("{0} said: {1}", from.GetPrimaryKey().ToString(), message);
             return TaskDone.Done;
         }
 
