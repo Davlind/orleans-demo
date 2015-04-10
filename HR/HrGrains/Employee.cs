@@ -29,12 +29,6 @@ namespace HrGrains
             return TaskDone.Done;
         }
 
-        public Task Greeting(IEmployee from, string message)
-        {
-            Console.WriteLine("{0} said: {1}", from.GetPrimaryKey().ToString(), message);
-            return TaskDone.Done;
-        }
-
         private int _level;
         private IManager _manager;
     }

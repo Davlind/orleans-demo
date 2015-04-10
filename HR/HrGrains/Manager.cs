@@ -18,11 +18,11 @@ namespace HrGrains
             return Task.FromResult(_reports);
         }
 
-        public async Task AddDirectReport(IEmployee employee)
+        public Task AddDirectReport(IEmployee employee)
         {
             _reports.Add(employee);
-            await employee.SetManager(this);
-            await employee.Greeting(_me, "Welcome to my team!");
+            employee.SetManager(this);
+            return TaskDone.Done;
         }
 
         public Task<IEmployee> AsEmployee()

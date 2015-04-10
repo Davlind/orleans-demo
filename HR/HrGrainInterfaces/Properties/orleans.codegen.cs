@@ -152,12 +152,6 @@ namespace HrGrainInterfaces
 
                 return base.InvokeMethodAsync<object>(-159913581, new object[] {@manager is global::Orleans.Grain ? HrGrainInterfaces.ManagerFactory.Cast(@manager.AsReference()) : @manager} );
             }
-            
-            System.Threading.Tasks.Task HrGrainInterfaces.IEmployee.Greeting(HrGrainInterfaces.IEmployee @from, string @message)
-            {
-
-                return base.InvokeMethodAsync<object>(-1319124596, new object[] {@from is global::Orleans.Grain ? HrGrainInterfaces.EmployeeFactory.Cast(@from.AsReference()) : @from, @message} );
-            }
         }
     }
     
@@ -193,8 +187,6 @@ namespace HrGrainInterfaces
                                 return ((IEmployee)grain).GetManager().ContinueWith(t => {if (t.Status == System.Threading.Tasks.TaskStatus.Faulted) throw t.Exception; return (object)t.Result; });
                             case -159913581: 
                                 return ((IEmployee)grain).SetManager((IManager)arguments[0]).ContinueWith(t => {if (t.Status == System.Threading.Tasks.TaskStatus.Faulted) throw t.Exception; return (object)null; });
-                            case -1319124596: 
-                                return ((IEmployee)grain).Greeting((IEmployee)arguments[0], (String)arguments[1]).ContinueWith(t => {if (t.Status == System.Threading.Tasks.TaskStatus.Faulted) throw t.Exception; return (object)null; });
                             default: 
                             throw new NotImplementedException("interfaceId="+interfaceId+",methodId="+methodId);
                         }
@@ -227,8 +219,6 @@ namespace HrGrainInterfaces
                             return "GetManager";
                     case -159913581:
                             return "SetManager";
-                    case -1319124596:
-                            return "Greeting";
                     
                         default: 
                             throw new NotImplementedException("interfaceId="+interfaceId+",methodId="+methodId);
